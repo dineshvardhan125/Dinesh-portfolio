@@ -8,31 +8,37 @@
   <link rel="stylesheet" href="styles.css/portfolio.css">
   <script src="https://kit.fontawesome.com/e6d2a96d32.js" crossorigin="anonymous"></script>
   <script defer src = "script.js/portfollio.js"></script>
+  <script defer src="script.js/sidemenu.js"></script>
+  <script defer src="script.js/ContactForm.js"></script>
 </head>
 <body>
-  <header>
+  <div id="header">
+    <div class="container">
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         <img src="styles.css/images/logo.png" alt="logo" id="logo">
       </nav>
-  </header>
-  <main>
-    <div class="headertext">
-      <p>WEB Developer</p>
-      <h1>Hi, I'm <span>Dinesh</span><br>
-        Vardhan From Hyderabad
-      </h1>
+        <div class="headertext">
+          <p>WEB Developer</p>
+          <h1>Hi, I'm <span>Dinesh</span><br>
+            Vardhan From India
+          </h1>
+        </div>
     </div>
-  </main>
+  </div>
+    
+ 
   <!-- -----------------------------------About mee---------------------- -->
   <div id="about">
-    <div class="container">
+    <div>
       <div class="row">
         <div class="about-col-2">
           <h1 class='sub-title'>About Me</h1>
@@ -58,7 +64,7 @@
           <div class="tab-contents" id="edu">
             <ul>
               <li><span>2022 - Current</span><br>Web Development Training at 100devs</li>
-              <li><span>2019 - 2022</span><br>Bachalor of Sciences in Computer Science</li>
+              <li><span>2019 - 2022</span><br>Bachalor of Sciences in Computer Science, <br> Adikavi Nannaya University</li>
             </ul>
           </div>
         </div>
@@ -76,27 +82,90 @@
         <div>
           <i class="fa-solid fa-code"></i>
           <h2>Building Websites</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae explicabo</p>
-          <a href="#">Learn more</a>
+          <p>I Build full stack web Applications which are responsive and Asthetic </p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Web_development#:~:text=Web%20development%20is%20the%20work,businesses%2C%20and%20social%20network%20services.">Learn more</a>
         </div>
         <div>
           <i class="fa-solid fa-paintbrush"></i>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae explicabo</p>
-          <a href="#">Learn more</a>
+          <h2>Web Designing</h2>
+          <p>Want a Beautifully designed website? <br>I Gotchu !</p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
         </div>
         <div>
           <i class="fa-solid fa-wand-magic-sparkles"></i>
-          <h2>UI/UX Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae explicabo</p>
-          <a href="#">Learn more</a>
+          <h2>UI/UX Designing</h2>
+          <p>I can design basic logos and User Interfaces
+            on Figma
+          </p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/User_experience_design">Learn more</a>
         </div>
       </div>
     </div>
   </div>
   <!-- -------------------------------------portfolio------------------------------- -->
-  
-
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="styles.css/images/bsites.jpg" alt="">
+          <div class="layer">
+            <h3>Resturant Website</h3>
+            <p>I build This Site for a small Local Restaurant</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="styles.css/images/webd.jpg" alt="">
+          <div class="layer">
+            <h3>Saloon Website</h3>
+            <p>I build This Site for a small Local saloon </p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="styles.css/images/Ux:ui.jpg" alt="">
+          <div class="layer">
+            <h3>Cosmos Website</h3>
+            <p>I designed a Website that shows a pic, which NASA captured on the day you Born</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- -------------------------------------Contact------------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="cot-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> Dineshvardhan654@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 9182277356</p>
+        <div class="social">
+          <a href="https://www.instagram.com/dinesh_dine125/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/DineshD67018814" target="blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/dineshvardhan654/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/dineshvardhan125" target="blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="styles.css/images/Dineshvardhan. CV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="cot-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+          <button class="submitbtn btn" type="submit">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © Dinesh. Built with <i class="fa-solid fa-heart"></i> by Dinesh</p>
+  </footer>
+</div>
 
 </body>
 </html>
