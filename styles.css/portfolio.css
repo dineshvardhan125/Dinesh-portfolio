@@ -35,11 +35,13 @@ nav{
 nav #logo{
   width: 100px;
   height: 100%;
+  margin-right: -60px;
 }
 nav ul{
   display: block;
   flex-wrap: wrap;
   width: 50%;
+  margin-left: -60px;
 
 }
 nav ul li{
