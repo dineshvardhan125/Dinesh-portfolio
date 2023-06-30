@@ -349,7 +349,6 @@ nav .fa-solid{
   #header{
     background: url(images/ssbg.jpeg);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
   }
 
